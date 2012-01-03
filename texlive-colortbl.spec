@@ -6,7 +6,7 @@
 # catalog-version v0.1
 Name:		texlive-colortbl
 Version:	v0.1
-Release:	1
+Release:	2
 Summary:	Add colour to LaTeX tables
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/colortbl
