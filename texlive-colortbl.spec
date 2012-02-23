@@ -1,12 +1,12 @@
-# revision 15878
+# revision 25394
 # category Package
 # catalog-ctan /macros/latex/contrib/colortbl
-# catalog-date 2009-09-27 09:39:14 +0200
+# catalog-date 2012-02-14 10:56:36 +0100
 # catalog-license lppl
-# catalog-version v0.1
+# catalog-version v1.0a
 Name:		texlive-colortbl
-Version:	v0.1
-Release:	2
+Version:	v1.0a
+Release:	1
 Summary:	Add colour to LaTeX tables
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/colortbl
@@ -20,8 +20,8 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-Allows rows and columns to be coloured, and even individual
-cells.
+The package allows rows and columns to be coloured, and even
+individual cells.
 
 %post
     %{_sbindir}/texlive.post
@@ -35,8 +35,8 @@ cells.
 %files
 %{_texmfdistdir}/tex/latex/colortbl/colortbl.sty
 %doc %{_texmfdistdir}/doc/latex/colortbl/README
-%doc %{_texmfdistdir}/doc/latex/colortbl/colortbl-de.pdf
-%doc %{_texmfdistdir}/doc/latex/colortbl/colortbl-de.tex
+%doc %{_texmfdistdir}/doc/latex/colortbl/colortbl-DE.pdf
+%doc %{_texmfdistdir}/doc/latex/colortbl/colortbl-DE.tex
 %doc %{_texmfdistdir}/doc/latex/colortbl/colortbl.pdf
 #- source
 %doc %{_texmfdistdir}/source/latex/colortbl/colortbl.dtx
