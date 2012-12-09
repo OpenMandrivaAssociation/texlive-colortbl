@@ -51,3 +51,21 @@ individual cells.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> v1.0a-1
++ Revision: 779423
+- Update to latest release.
+
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> v0.1-2
++ Revision: 750376
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> v0.1-1
++ Revision: 718100
+- texlive-colortbl
+- texlive-colortbl
+- texlive-colortbl
+- texlive-colortbl
+
