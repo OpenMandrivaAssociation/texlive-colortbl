@@ -1,13 +1,13 @@
 Name:		texlive-colortbl
-Version:	1.0a
-Release:	2
+Version:	64015
+Release:	1
 Summary:	Add colour to LaTeX tables
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/colortbl
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colortbl.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colortbl.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colortbl.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colortbl.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colortbl.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/colortbl.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -18,27 +18,24 @@ The package allows rows and columns to be coloured, and even
 individual cells.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/colortbl/colortbl.sty
-%doc %{_texmfdistdir}/doc/latex/colortbl/README
-%doc %{_texmfdistdir}/doc/latex/colortbl/colortbl-DE.pdf
-%doc %{_texmfdistdir}/doc/latex/colortbl/colortbl-DE.tex
-%doc %{_texmfdistdir}/doc/latex/colortbl/colortbl.pdf
+%{_texmfdistdir}/tex/latex/colortbl
+%doc %{_texmfdistdir}/doc/latex/colortbl
 #- source
-%doc %{_texmfdistdir}/source/latex/colortbl/colortbl.dtx
-%doc %{_texmfdistdir}/source/latex/colortbl/colortbl.ins
+%doc %{_texmfdistdir}/source/latex/colortbl
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
