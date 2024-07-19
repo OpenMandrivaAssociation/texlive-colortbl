@@ -1,5 +1,5 @@
 Name:		texlive-colortbl
-Version:	70034
+Version:	71734
 Release:	1
 Summary:	Add colour to LaTeX tables
 Group:		Publishing
